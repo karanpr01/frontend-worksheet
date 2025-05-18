@@ -95,3 +95,31 @@ function factorial(n) {
 console.log(factorial(5)); // Output: 120
 console.log(factorial(0)); // Output: 1 (by definition)
 console.log(factorial(-3)); // Output: undefined
+
+
+//* 9. What is the difference in how this works in a regular function vs. an arrow function?
+
+// In a regular function, this refers to the object that called the function (usually the object where the function is written).
+
+// In an arrow function, this doesn't have its own value.
+// It looks outside (at the surrounding code where it was written) to get the value of this.
+// So if it’s written inside an object but not inside a regular function, it won’t find the right this, and you'll see undefined.
+
+const person1 = {
+  name: "Prem",
+  greet: function () {
+    console.log("Hi, I am", this.name);
+  }
+};
+
+person1.greet(); // ✅ Hi, I am Prem
+
+
+const person = {
+  name: "Prem",
+  greet: () => {
+    console.log("Hi, I am", this.name); // ❌ undefined
+  }
+};
+
+person.greet();
