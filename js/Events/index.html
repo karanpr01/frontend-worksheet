@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propogation</title>
+</head>
+
+<body>
+    <div class="parent" style="padding: 20px; background-color: lightblue;">
+        Parent
+        <button class="child">Cilck me</button>
+    </div>
+    <script>
+        const parentBtn = document.querySelector(".parent")
+        const childBtn = document.querySelector(".child")
+
+
+        childBtn.addEventListener("click", function (e) {
+            console.log("Child Listener 1");
+            // e.stopPropagation(); 
+            e.stopImmediatePropagation()
+        });
+
+        childBtn.addEventListener("click", function () {
+            console.log("Child Listener 2");
+        });
+
+        parentDiv.addEventListener("click", function () {
+            console.log("Parent Listener");
+        });
+
+    </script>
+</body>
+
+</html>
