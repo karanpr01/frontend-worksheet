@@ -51,7 +51,7 @@
 
 - And here is the Output:
 
-![Output](assest/Immediate%20output.png)
+![Output](assest/immediate%20output.png)
 
 ----
 
