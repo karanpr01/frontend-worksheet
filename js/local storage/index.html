@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login/signup form</title>
+</head>
+
+<body>
+    <main>
+        <sectin class="form-container">
+            <div class="form-warpper">
+                <div class="login-form">
+                    <div class="col">
+                        <h2>Welcome Back!!</h2>
+                        <form action="">
+                            <label for="login-email">Email:</label>
+                            <input type="email" name="email" id="login-email" required><br>
+                            <label for="login-password">Password:</label>
+                            <input type="password" name="password" id="login-password" required><br>
+                            <p><a href="#">Forgot Password?</a></p>
+                            <button type="submit">Login</button>
+                        </form>
+                        <div class="foot">
+                            <p>-or-
+                                <br>
+                                Don't have Account? <a href="#" id="to-signup">Create Account</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="assest/young man sitting in front of laptop.png" alt="login-image" width="100%">
+                    </div>
+
+                </div>
+                <div class="signup-form">
+                    <div class="col">
+                        <h2>Create Account</h2>
+                        <form action="">
+                            <label for="user-name">Enter your name:</label>
+                            <input type="text" name="user-name" id="user-name">
+                            <label for="signup-email">Email:</label>
+                            <input type="email" name="email" id="signup-email" required>
+                             <span id="email-error" class="error"></span>
+                            <br>
+                            <label for="phone-number">Phone no:</label>
+                            <input type="tel" name="phone-number" id="phone-number" required >
+                             <span id="phone-error" class="error"></span>
+                            <br>
+                            <label for="signup-password">Password:</label>
+                            <input type="password" name="password" id="signup-password" required>
+                             <span id="password-error" class="error"></span>
+                            <br>
+                            <button type="submit">Create Account</button>
+                        </form>
+                        <div class="foot">
+                            <p>-or-
+                                <br>
+                                Already have Account? <a href="#" id="to-login">Sign In</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="assest/young man with laptop computer working at home office.png" alt="login-image" width="100%">
+                    </div>
+                </div>
+            </div>
+        </sectin>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
