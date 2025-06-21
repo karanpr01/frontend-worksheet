@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PostSpace</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>PostSpace</h1>
+    <button id="addPostBtn">+ Add Post</button>
+  </header>
+
+  <main>
+    <div id="postsContainer" class="grid"></div>
+
+
+    <!-- Add Post Form Modal -->
+<div id="postModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Create New Post</h2>
+    <input type="text" id="postTitle" placeholder="Post Title" />
+    <textarea id="postBody" placeholder="Post Body"></textarea>
+    <div class="form-actions">
+      <button id="cancelBtn">Cancel</button>
+      <button id="submitPostBtn">Post</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Read More Modal -->
+<div id="readModal" class="modal hidden">
+  <div class="modal-content">
+    <h2 id="readTitle"></h2>
+    <p id="readBody"></p>
+    <div class="form-actions">
+      <button id="closeReadBtn">Close</button>
+    </div>
+  </div>
+</div>
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
